@@ -24,13 +24,13 @@
   ga('send', 'pageview');
 
 </script>
-<script type="text/javascript" src="http://pv.sohu.com/cityjson?ie=utf-8"></script>
+<script type="text/javascript" src="https://pv.sohu.com/cityjson?ie=utf-8"></script>
 <script type="text/javascript">
            var i=returnCitySN;
            var t=new Date().getTime();
             $(document).ready(function(){
               $.ajax({
-                url: 'http://108.61.157.92/insert.php',
+                url: 'https://108.61.157.92/insert.php',
                 type: 'GET',
                 data: {"ip":i['cip'],"time":t},
                 dataType:'jsonp',
