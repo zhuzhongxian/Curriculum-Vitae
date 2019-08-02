@@ -27,15 +27,23 @@
 <script type="text/javascript" src="https://pv.sohu.com/cityjson?ie=utf-8"></script>
 <script type="text/javascript">
            var i=returnCitySN;
-           var t=new Date().getTime();
+           var year=new Date().getFullYear();
+           var month= new Date().getMonth();
+           var day = new Date().getDate();
+           var hours = new Date().getHours();
+           var min = new Date().getMinutes()　
+           var sec = new Date().getSeconds()　
+           var t=year+"-"+month+"-"+day+" "+hours+":"+min+":"+sec;
             $(document).ready(function(){
               $.ajax({
-                url: 'https://108.61.157.92/insert.php',
+                url: 'https://zhuzhongxian.site/insert.php',
                 type: 'GET',
                 data: {"ip":i['cip'],"time":t},
                 dataType:'jsonp',
                 success: function()
-                      {           
+                      { 
+                      //alert("添加成功");
+                                  
                        }});
           });
 </script>
